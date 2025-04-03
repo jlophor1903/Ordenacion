@@ -1,9 +1,13 @@
-n = [65, 23 ,42]
+n = [252 , 14, 58]
+def swap(j):
+    a = n[j]
+    n[j] = n[j+1]
+    n[j+1] = a
+ 
 
-# Comparamos los valores y los ordenamos
-for i in range(2):
-    if n[i] > n[i+1]:
-        n[i], n[i+1] = n[i+1], n[i]
+for i in range(5):
+    for j in range(5):
+        if n[j]>n[j+1]:
+            swap(j)
 
-
-print(n)
+print(n) 
